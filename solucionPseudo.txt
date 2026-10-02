@@ -1,0 +1,65 @@
+Inicio
+	precio = 0
+	unidades = 0
+	preciototal = 0
+	unidadestotal = 0
+	descuento = 0
+	pordescuento = 0
+	preciofin = 0
+	
+	Escribe "Introduce precio del producto (0 para terminar):"
+	Lee precio
+	
+	Mientras precio !=0 hacer
+		
+		mientras precio < 0 hacer
+			Escribe "El precio no puede ser negativo"
+			Escribe "Introduce precio del producto (0 para terminar):"
+			Lee precio
+	
+	si precio != 0 entonces
+		
+			Escribe "Introduce el numero de unidades:"
+			Lee unidades
+
+			mientras unidades <= 0 entonces
+				Escribe "Las unidades deben ser mayor de 0"
+				Escribe "Introduce el numero de unidades:"
+				Lee unidades
+			
+			unidadestotal = unidadestotal + unidades
+			preciototal = preciototal + (precio x unidades)
+	
+		Escribe "Introduce precio del producto (0 para terminar):"
+		Lee precio
+		
+		
+		
+	si unidadestotal == 0 entonces
+		Escribe "No se han registrado productos"
+	sino
+		Escribe "RESUMEN DE LA COMPRA"
+		Escribe "Total de unidades:" unidadestotal
+		Escribe "Importe antes del descuento:" + preciototal + "euros"
+			
+		Si preciototal >= 50 y preciototal < 100 entonces
+			pordescuento = 5
+		Sino
+			Si preciototal >= 100 entonces
+				pordescuento = 10
+			Sino
+				pordescuento = 0
+        
+
+    descuento = preciototal x pordescuento / 100
+    preciofin = preciototal - descuento
+
+    Escribe "Descuento aplicado:" + pordescuento + "%"
+    Escribe "Descuento: " + descuento + "euros"
+    Escribe "Importe final: " + preciofin + "euros"
+
+Fin	
+		
+		
+		
+	

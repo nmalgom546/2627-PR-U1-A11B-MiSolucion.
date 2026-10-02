@@ -16,3 +16,7 @@
 ### [Enunciado Algoritmo para resolver con Diagrama de flujo SIN AYUDAS](ejercicioDiagFlujo02.md)
 ### [Enunciado Algoritmo para resolver con Diagrama de flujo con ayudas y pistas](ejercicioDiagFlujo02_Ayuda01.md)
 ### [Enunciado Algoritmo para resolver con Diagrama de flujo con ayuda más guiada](ejercicioDiagFlujo02_Ayuda02.md)
+
+# Repositorio de mi solución
+
+[2627-PR-U1-A11B-MiSolucion](https://github.com/nmalgom546/2627-PR-U1-A11B-MiSolucion..git)
